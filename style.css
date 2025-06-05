@@ -141,3 +141,20 @@ footer {
   background-color: #004c99;
   transform: scale(1.1);
 }
+section {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 0.6s ease forwards;
+}
+
+section:nth-child(2) { animation-delay: 0.3s; }
+section:nth-child(3) { animation-delay: 0.6s; }
+section:nth-child(4) { animation-delay: 0.9s; }
+section:nth-child(5) { animation-delay: 1.2s; }
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
